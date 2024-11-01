@@ -54,17 +54,17 @@
 				 
 		    <tr>
 			    <td>
-				    <label for="gender">Gender</label>
+				    <label>Gender</label>
 			    <td>
-				    <input type="radio" name="gender" required>M
-				    <input type="radio" name="gender">F
-				    <input type="radio" name="gender">Other
+				    <input type="radio" name="gender" value="male" required>M
+				    <input type="radio" name="gender" value="female" required>F
+				    <input type="radio" name="gender" value="others" required>Other
 				   
 		    <tr>
 			    <td>
 				    <label for="category">Category</label>
 			    <td>
-				    <select id="category" required>
+				    <select id="category" name="category" required>
 					     <option value="s" selected disabled>Select</option>
           				     <option value="st/sc">ST/SC</option>
            				     <option value="obc1">OBC-I</option>
@@ -89,7 +89,7 @@
         <td>
            <label for="college">College Name</label>
         <td>
-           <select name="college" required>
+           <select id="college" name="college" required>
             	 <option selected disabled>Select</option>
             	 <option value="vbu">Vinoba Bhave University</option>
             	 <option value="st columbus">St. Columbus College</option>
@@ -102,7 +102,7 @@
            <label for="course">Course Name</label>
             		
        	<td>
-           <select name="course" required>
+           <select id="course" name="course" required>
             	 <option selected disabled>Select</option>
             	 <option value="bca">BCA</option>
             	 <option value="mca">MCA</option>
@@ -113,14 +113,14 @@
            <label for="rNo">Registration Number</label>
           
         <td>
-           <input type="Number" id="rNo" name="Reg_No" placeholder="Ex. 2022251001" required>
+           <input type="Number" id="rNo" name="Reg_No" placeholder="Ex. 2022250000" required>
           
       <tr>
          <td>
            <label for="urNo">University Roll No.</label>
            
          <td>
-           <input type="Number" id="urNo" name="Uni_No" placeholder="Ex. 87893768" required>
+           <input type="Number" id="urNo" name="Uni_No" placeholder="Ex. 245089082114" required>
             
       <tr>
          <td>
@@ -131,18 +131,20 @@
             		
       <tr>
          <td>
-           <label>Session</label>
+           <label for="session">Session</label>
             		
          <td>
-           <select name="session" required>
+           <select id="session" name="session" required>
             			<option selected disabled>Select</option>
-            			<option>2020-2023</option>
-            			<option>2021-2024</option>
-            			<option>2022-2025</option>
+            			<option value="20_23">2020-2023</option>
+            			<option value="21_24">2021-2024</option>
+            			<option value="22_25">2022-2025</option>
+		  		<option value="23_26">2023-2026</option>
+            			<option value="24_27">2024-2027</option>
            </select>
           
      <tr>
-        	<td>
+        <td>
            <label>Semester</label>
      
         	<td>
@@ -182,7 +184,7 @@
 				    <label for="address">Address</label>
 				    
 			    <td>
-				    <textarea id="address" name="address" maxlength="200" placeholder="Street/City/State" required></textarea>
+				    <textarea id="address" name="address" maxlength="200" placeholder="Street/City/State/PinCode" required></textarea>
 				    
 		   <tr>
 			    <td>
