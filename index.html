@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+	<meta charset="UTF-8">
+	<!--meta name="viewport" content="width=device-width, initial-scale=1"-->
+	<title>Student Registration Form</title>
+	<link rel="stylesheet" href="student.css">
+</head>
+
+<body>
+    <div class="background"></div>
+    
+    <header>
+    		<h1>REGISTRATION FORM</h1>
+   	</header>
+   
+   <main class="content">
+    <form action="database.php" method="GET"  enctype="multipart/form-data" target="_blank">
+     
+   
+   
+     
+     <div>
+	    <table class="glass-table" bordercolor="white"  rules="rows">
+		    <tr>
+		     	<th>Personal Details
+		    
+		    
+		    <tr><td>
+				       <label for="name">Name</label>  
+			       <td>
+				       <input type="text" id="name" name="name" placeholder="Enter your full name" required autofocus>
+		    
+		    
+		    <tr>
+			    <td>
+				    <label for="fname">Father's Name</label>
+			    <td>
+				    <input type="text" id="fname" name="fname" placeholder="Enter your father's name" required>
+				 
+		    
+		    <tr>
+			    <td>
+				    <label for="mname">Mother's Name</label>
+			    <td>
+				    <input type="text" id="mname" name="mname" placeholder="Enter your mother's name" required>
+				   
+		    <tr>
+			    <td>
+			    	<label for="dob">Date of Birth</label>
+				   <td>
+				    <input type="Date"  id="dob" name="dob" required>
+				 
+		    <tr>
+			    <td>
+				    <label for="gender">Gender</label>
+			    <td>
+				    <input type="radio" name="gender" required>M
+				    <input type="radio" name="gender">F
+				    <input type="radio" name="gender">Other
+				   
+		    <tr>
+			    <td>
+				    <label for="category">Category</label>
+			    <td>
+				    <select required>
+					     <option value="s" selected disabled>Select</option>
+           <option value="st">ST/SC</option>
+           <option value="obc1">OBC-I</option>
+           <option value="obc2">OBC-II</option>
+           <option value="gen">GEN</option>
+				    </select>
+    
+    </table>
+    </div>
+     
+    
+    
+    
+    
+    
+    <div>
+    <table class="glass-table" bordercolor="white"  rules="rows">    
+      <tr>
+			    <th>Course Details
+      
+      <tr>
+        <td>
+           <label for="college">College Name</label>
+        <td>
+           <select name="college" required>
+            	 <option selected disabled>Select</option>
+            	 <option value="vbu">Vinoba Bhave University</option>
+            	 <option value="sc">St. Columbus College</option>
+            	 <option value="ac">Aanada College Hzb</option>
+            	 <option value="wc">Women's College Hzb</option>
+           </select>
+      
+      <tr>
+        <td>
+           <label for="course">Course Name</label>
+            		
+       	<td>
+           <select name="course" required>
+            	 <option selected disabled>Select</option>
+            	 <option value="bca">BCA</option>
+            	 <option value="mca">MCA</option>
+           </select>
+           
+      <tr>
+        	<td>
+           <label for="rNo">Registration Number</label>
+          
+        <td>
+           <input type="Number" id="rNo" name="rNo" placeholder="Enter your Reg.No." required>
+          
+      <tr>
+         <td>
+           <label for="urNo">University Roll No.</label>
+           
+         <td>
+           <input type="Number" id="urNo" name="urNo" placeholder="Enter your U.Roll No." required>
+            
+      <tr>
+         	<td>
+            <label for="rollno">Class Roll No.</label>
+       
+         <td>
+            <input type="Number" id="rollno" name="rollno" min="1" max="50" required>
+            		
+      <tr>
+         <td>
+           <label>Session</label>
+            		
+         <td>
+           <select for="session" required>
+            			<option selected disabled>Select</option>
+            			<option>2020-2023</option>
+            			<option>2021-2024</option>
+            			<option>2022-2025</option>
+           </select>
+          
+     <tr>
+        	<td>
+           <label>Semester</label>
+     
+        	<td>
+           <select required>
+            	<option selected disabled>Select</option>
+            	<option value="1">I</option>
+            	<option value="2">II</option>
+            	<option value="3">III</option>
+            	<option value="4">IV</option>
+            	<option value="5">V</option>
+            	<option value="6">VI</option>
+           </select>
+            	
+     <tr>
+        <td>
+           <label for="doa">Date of Addmission</label>
+            	
+       	<td>
+           <input type="Date" id="doa" name="doa" required>
+           
+     </table>
+     </div>
+     
+     
+     
+     
+   
+     
+    <div>
+    <table class="glass-table" bordercolor="white"  rules="rows">     
+		    
+		   <tr>
+			    <th>Contact Details
+		    
+		   <tr>
+			    <td>
+				    <label for="address">Address</label>
+				    
+			    <td>
+				    <textarea id="address" name="address" maxlength="200" placeholder="Enter full address" required></textarea>
+				    
+		   <tr>
+			    <td>
+				    <label for="mobile">Phone No.</label>
+				    
+			    <td>
+				    <input type="Tel" id="mobile" name="mobile" minlength="10" maxlength="10" placeholder="10 digit mobile no." required>
+				    
+		   <tr>
+			    <td>
+				    <label for="email">Email</label>
+				   
+			    <td>
+				    <input type="Email" id="email" name="email" placeholder="Enter your email" required>
+				    
+		   <tr>
+			    <td>
+				    <label for="password">Password</label>
+				    
+			    <td>
+				    <input type="Password" id="password" name="password" placeholder="8 digit password" required>
+		    
+		   </table>
+		   </div>
+		   
+		   
+		   
+		   
+		   
+		   <div>
+		   <table class="glass-table" bordercolor="white"  rules="rows">
+
+		    <tr>
+			    <th>Photograph & Signature 
+		    
+		    <tr>
+			    <td rowspan="2">
+				    <label for="photo">Upload Photo</label>
+				    <div>
+				    <input type="File" name="photo" accept="image/*" required>
+				    </div>
+				   
+			    <td>
+				    <label for="sign">Upload Signature</label>
+				    <div>
+			  	    <input type="File" name="sign" accept="image/*" required>
+				    </div>
+				    
+		   </table>
+		   </div>
+
+		   
+		   
+		   
+		   
+		   <div>
+		   <table class="glass-table" bordercolor="white"  rules="rows">
+		    <tr>
+			    <th>Declaration
+		    <tr>
+			    <td class="data" colspan="2">
+				    <p><i>I hereby declare that all the statements made in this application are true, complete and correct to the best of my knowledge and belief.</i></p>
+				    <input type="checkbox" name="condition" required>   I Agree
+				 </table>
+				 </div>
+				  
+				  
+				  
+				  
+			    <div align="center">
+				    <input type="reset" name="reset" value="RESET">
+				    <input type="submit" name="submit" value="SUBMIT">
+				   </div>
+	    
+   </form>
+   <main>
+       
+   
+    
+</body>
+</html>
