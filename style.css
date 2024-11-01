@@ -11,6 +11,30 @@
      h1 {
            margin-top: 20px;
        }
+
+
+      .reset-button {
+            background-color: #433878; /* Green background */
+            color: white;              /* White text */
+            padding: 10px 20px;        /* Spacing around the text */
+            border: none;              /* No border */
+            border-radius: 15px;        /* Rounded corners */
+            font-size: 16px;           /* Font size */
+            cursor: pointer;           /* Pointer cursor on hover */
+            transition: background-color 0.3s ease; /* Smooth hover effect */
+        }
+       
+       .submit-button {
+            background-color: #7E60BF; /* Green background */
+            color: white;              /* White text */
+            padding: 10px 20px;        /* Spacing around the text */
+            border: none;              /* No border */
+            border-radius: 15px;        /* Rounded corners */
+            font-size: 16px;           /* Font size */
+            cursor: pointer;           /* Pointer cursor on hover */
+            transition: background-color 0.3s ease; /* Smooth hover effect */
+            margin-left: 6px;
+       }
        
 
       .background {
