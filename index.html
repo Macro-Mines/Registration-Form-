@@ -13,10 +13,10 @@
     
     <header>
     		<h1>REGISTRATION FORM</h1>
-   	</header>
+    </header>
    
    <main class="content">
-    <form action="database.php" method="GET"  enctype="multipart/form-data" target="_blank">
+    <form action="https://getform.io/f/allllwma" method="POST"  enctype="multipart/form-data" target="_blank">
      
    
    
@@ -37,14 +37,14 @@
 			    <td>
 				    <label for="fname">Father's Name</label>
 			    <td>
-				    <input type="text" id="fname" name="fname" placeholder="Enter your father's name" required>
+				    <input type="text" id="fname" name="father_name" placeholder="Enter your father's name" required>
 				 
 		    
 		    <tr>
 			    <td>
 				    <label for="mname">Mother's Name</label>
 			    <td>
-				    <input type="text" id="mname" name="mname" placeholder="Enter your mother's name" required>
+				    <input type="text" id="mname" name="mother_name" placeholder="Enter your mother's name" required>
 				   
 		    <tr>
 			    <td>
@@ -66,10 +66,10 @@
 			    <td>
 				    <select id="category" required>
 					     <option value="s" selected disabled>Select</option>
-           <option value="st">ST/SC</option>
-           <option value="obc1">OBC-I</option>
-           <option value="obc2">OBC-II</option>
-           <option value="gen">GEN</option>
+          				     <option value="st/sc">ST/SC</option>
+           				     <option value="obc1">OBC-I</option>
+           				     <option value="obc2">OBC-II</option>
+                                	     <option value="gen">GEN</option>
 				    </select>
     
     </table>
@@ -83,7 +83,7 @@
     <div>
     <table class="glass-table" bordercolor="white"  rules="rows">    
       <tr>
-			    <th colspan="2">Course Details
+	 <th colspan="2">Course Details
       
       <tr>
         <td>
@@ -92,9 +92,9 @@
            <select name="college" required>
             	 <option selected disabled>Select</option>
             	 <option value="vbu">Vinoba Bhave University</option>
-            	 <option value="sc">St. Columbus College</option>
-            	 <option value="ac">Aanada College Hzb</option>
-            	 <option value="wc">Women's College Hzb</option>
+            	 <option value="st columbus">St. Columbus College</option>
+            	 <option value="aanada college">Aanada College Hzb</option>
+            	 <option value="womens college">Women's College Hzb</option>
            </select>
       
       <tr>
@@ -113,28 +113,28 @@
            <label for="rNo">Registration Number</label>
           
         <td>
-           <input type="Number" id="rNo" name="rNo" placeholder="Enter your Reg.No." required>
+           <input type="Number" id="rNo" name="Reg_No" placeholder="Ex. 2022251001" required>
           
       <tr>
          <td>
            <label for="urNo">University Roll No.</label>
            
          <td>
-           <input type="Number" id="urNo" name="urNo" placeholder="Enter your U.Roll No." required>
+           <input type="Number" id="urNo" name="Uni_No" placeholder="Ex. 87893768" required>
             
       <tr>
-         	<td>
+         <td>
             <label for="rollno">Class Roll No.</label>
        
          <td>
-            <input type="Number" id="rollno" name="rollno" min="1" max="50" required>
+            <input type="Number" id="rollno" name="roll_no" min="1" max="50" required>
             		
       <tr>
          <td>
            <label>Session</label>
             		
          <td>
-           <select for="session" required>
+           <select name="session" required>
             			<option selected disabled>Select</option>
             			<option>2020-2023</option>
             			<option>2021-2024</option>
@@ -146,7 +146,7 @@
            <label>Semester</label>
      
         	<td>
-           <select required>
+           <select name="sem" required>
             	<option selected disabled>Select</option>
             	<option value="1">I</option>
             	<option value="2">II</option>
@@ -158,10 +158,10 @@
             	
      <tr>
         <td>
-           <label for="doa">Date of Addmission</label>
+           <label for="dob">Date of Addmission</label>
             	
        	<td>
-           <input type="Date" id="doa" name="doa" required>
+           <input type="Date" id="dob" name="dob" required>
            
      </table>
      </div>
@@ -182,7 +182,7 @@
 				    <label for="address">Address</label>
 				    
 			    <td>
-				    <textarea id="address" name="address" maxlength="200" placeholder="Enter full address" required></textarea>
+				    <textarea id="address" name="address" maxlength="200" placeholder="Street/City/State" required></textarea>
 				    
 		   <tr>
 			    <td>
@@ -196,7 +196,7 @@
 				    <label for="email">Email</label>
 				   
 			    <td>
-				    <input type="Email" id="email" name="email" placeholder="Enter your email" required>
+				    <input type="Email" id="email" name="email" placeholder="Ex. xyz@gmail.com" required>
 				    
 		   <tr>
 			    <td>
@@ -222,13 +222,13 @@
 			    <td rowspan="2">
 				    <label for="photo">Upload Photo</label>
 				    <div>
-				    <input type="File" name="photo" accept="image/*" required>
+				    <input type="File" name="photo" accept="image/*">
 				    </div>
 				   
 			    <td>
 				    <label for="sign">Upload Signature</label>
 				    <div>
-			  	    <input type="File" name="sign" accept="image/*" required>
+			  	    <input type="File" name="sign" accept="image/*">
 				    </div>
 				    
 		   </table>
@@ -245,7 +245,7 @@
 		    <tr>
 			    <td class="data" colspan="2">
 				    <p><i>I hereby declare that all the statements made in this application are true, complete and correct to the best of my knowledge and belief.</i></p>
-				    <input type="checkbox" name="condition" required> I Agree
+				    <input type="checkbox" name="condition" required> <font color="#FF76CE">I Agree</font>
 				 </table>
 				 </div>
 				  
@@ -253,14 +253,12 @@
 				  
 				  
 			    <div align="center">
-				    <input type="reset" name="reset" value="RESET">
-				    <input type="submit" name="submit" value="SUBMIT">
+				    <input type="reset" name="reset" value="RESET" class="reset-button">
+				    <input type="submit" name="submit" value="SUBMIT" class="submit-button">
 				   </div>
 	    
    </form>
    <main>
-       
-   
-    
+
 </body>
 </html>
