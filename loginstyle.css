@@ -1,0 +1,123 @@
+   * {
+          margin: 0;   
+        }
+        
+     body {
+           color: white;
+           font-family: Consolas;
+       }
+       
+    
+       
+     h1 {
+           margin-top: 80px;
+           text-align: center;
+           font-size: 50px;
+       }
+       
+     .background {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                margin-top: 0px;
+                background-image: url("background.jpg");
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+               
+                z-index: -1;
+            }
+            
+            
+      .content {
+                position: relative;
+                z-index: 1;
+                margin-top:50px;
+                background: linear-gradient(to top, black, rgba(255, 255, 255, 0)); /* Fade effect at the top */
+                height: 100vh;
+            }
+       
+       
+      .ftext {
+          margin-left: 20%;
+      } 
+      
+      
+      .rtext {
+          margin-left: 20%;
+          margin-top: 100px;
+      } 
+      
+      a {
+           color: pink;
+       }
+       
+      
+     .submit-button {
+            width: 200px;
+            background-color: #7E60BF; /* Green background */
+            color: white;              /* White text */
+            padding: 10px 20px;        /* Spacing around the text */
+            border: noe; 
+            border-color: white;           /* No border */
+            border-radius: 15px;        /* Rounded corners */
+            font-size: 16px;           /* Font size */
+            cursor: pointer;           /* Pointer cursor on hover */
+            transition: background-color 0.3s ease; /* Smooth hover effect */
+            
+        }
+            
+    
+    div {
+        margin-top: 20px;
+    }
+          
+          
+          
+    .glass-table {
+            width: 60%;
+            height: auto;
+            margin: auto;
+            border-collapse: collapse;
+            background: rgba(255, 225, 255, 0.3); /* Semi-transparent white */
+            backdrop-filter: blur(10px); /* Frosted glass effect */
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow */
+            overflow: hidden; 
+     
+     td {
+            padding: 30px; /* Space around text */
+            font-size: 20px;
+            width:50%;
+        }
+       
+     input {
+         width: 60%;
+         height: 40px;;
+         margin-left: 20px;
+         background: rgba(0, 0, 0, 0.5); /* Semi-transparent white */
+         backdrop-filter: blur(4px);
+         border: none;
+         border-color: violet;
+         border-radius: 10px;
+         color: white;
+         font-size: 17px;
+         padding-left: 10px;
+     }
+     
+     input::placeholder {
+         color: white;
+         font-size: 17px;
+         margin-left: 20px;
+     }
+     
+     input:focus {
+         outline-color: violet;
+     }
+     
+     input::cursor {
+         margin-left: 10px;
+     }
+   

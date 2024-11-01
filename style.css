@@ -6,14 +6,34 @@
            color: white;
            font-family: Consolas;
        }
+       
+       
+       header {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 70px;
+          background: rgba(51, 51, 255, 0.3); /* Semi-transparent background */
+          backdrop-filter: blur(10px);
+          text-align: center;
+          font-size: 1rem;
+          z-index: 10;
+    }
      
      
      h1 {
            margin-top: 20px;
        }
-
-
-      .reset-button {
+       
+      .signin{
+          position: relative;
+          margin-right: 80px ;
+          text-align: right;
+      }
+       
+       
+       .reset-button {
             background-color: #433878; /* Green background */
             color: white;              /* White text */
             padding: 10px 20px;        /* Spacing around the text */
@@ -28,13 +48,29 @@
             background-color: #7E60BF; /* Green background */
             color: white;              /* White text */
             padding: 10px 20px;        /* Spacing around the text */
-            border: none;              /* No border */
+            border-color: white;          /* No border */
             border-radius: 15px;        /* Rounded corners */
             font-size: 16px;           /* Font size */
             cursor: pointer;           /* Pointer cursor on hover */
             transition: background-color 0.3s ease; /* Smooth hover effect */
             margin-left: 6px;
-       }
+        }
+        
+        .sign-button {
+            width: 150px;
+            background-color: #7E60BF; /* Green background */
+            color: white;              /* White text */
+            padding: 10px 20px;        /* Spacing around the text */
+            
+            border-color: white;           /* No border */
+            border-radius: 15px;        /* Rounded corners */
+            font-size: 16px;           /* Font size */
+            cursor: pointer;           /* Pointer cursor on hover */
+            transition: background-color 0.3s ease; /* Smooth hover effect */
+           
+            
+        }
+       
        
 
       .background {
@@ -43,6 +79,7 @@
                 left: 0;
                 width: 100%;
                 height: 100%;
+                margin-top: 0px;
                 background-image: url("background.jpg");
                 background-size: cover;
                 background-position: center;
@@ -51,18 +88,6 @@
                 z-index: -1;
             }
             
-      header {
-          position: fixed;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 70px;
-          background: rgba(51, 51, 255, 0.3); /* Semi-transparent background */
-          backdrop-filter: blur(10px);
-          text-align: center;
-          font-size: 1rem;
-          z-index: 10;
-    }
     
     div {
         margin-top: 20px;
@@ -71,7 +96,7 @@
       .content {
                 position: relative;
                 z-index: 1;
-                margin-top:80px;
+                margin-top:100px;
                 background: linear-gradient(to top, black, rgba(255, 255, 255, 0)); /* Fade effect at the top */
                 height: 160vh;
             }
@@ -104,7 +129,7 @@
            padding: 8px;
            font-size: 16px;
            text-align: center;
-           backdrop-filter: blur(20px);
+           backdrop-filter: blur(90px);
       }
      
     
@@ -118,5 +143,3 @@
     textarea:focus {
           outline-color: violet ;
         }
-        
-    

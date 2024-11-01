@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="loginstyle.css">
+</head>
+<body>
+     <div class="background"></div>
+    
+     <header>
+    		<h1>SIGN IN</h1>
+    	</header>
+   
+    <main class="content">
+        <form action="database.php" method="GET"  enctype="multipart/form-data" target="_blank">
+        <table class="glass-table" bordercolor="white"  rules="rows">
+            <tr>
+                <td>
+                    <label for="username"> USERNAME : </label>
+                    <input type="text" id="username"  name="username" autofocus placeholder="Enter username/email/mobile no" required>
+                    
+            <tr>
+                <td>
+                    <label for="password"> PASSWORD :</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password" required> 
+                        
+        </table>
+        </form>
+        
+        <div>
+        <p class="ftext">Forgot password ?</p>
+        </div>
+        
+        <div align="center">
+            <input type="submit" value="SIGN IN" class="submit-button">
+        </div>
+        
+        <div>
+        <p class="rtext">Not a member !  <a href="index.html">Register now</a></p>
+        </div>
+    </main>
+    
+</body>
+</html>
