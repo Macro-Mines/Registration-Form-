@@ -3,7 +3,7 @@
 ---
 
 
-#Student Registration Form
+# Student Registration Form
 
 
 Welcome to the Student Registration Form project! This is a simple and intuitive form designed for registering students, created using HTML and CSS. Data submission is handled via Getform.io to collect user data securely and efficiently.
